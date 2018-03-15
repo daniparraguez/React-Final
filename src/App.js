@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 
 import logo from './logo.svg';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-<Navbar inverse collapseOnSelect>
+
+<Navbar inverse fixedTop collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
       <Image src="./Film-icon.png" rounded />
@@ -40,6 +41,20 @@ class App extends Component {
     </Nav>
   </Navbar.Collapse>
 </Navbar>
+<Grid>
+  <Row>
+    <Col xs={6} md={4}>
+      <Image src="Film-icon.png" rounded />
+    </Col>
+    <Col xs={6} md={4}>
+      <Image src="/thumbnail.png" circle />
+    </Col>
+    <Col xs={6} md={4}>
+      <Image src="/thumbnail.png" thumbnail />
+    </Col>
+  </Row>
+</Grid>
+
     );
   }
 }
