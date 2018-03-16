@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Header.css';
 
 function Header ({ appName, user, onAuth, onLogout }) {
   function renderUserData () {
@@ -49,4 +50,4 @@ function Header ({ appName, user, onAuth, onLogout }) {
   )
 }
 
-export default Header
+export default Header;

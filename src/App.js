@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import Header from './components/Header';
+import Header from './Components/Header';
+import Search from './Components/Search';
 import logo from './logo.svg';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
 import './App.css';
@@ -39,7 +40,7 @@ class App extends Component {
 
   render() {
     return (
-<Navbar inverse collapseOnSelect>
+<Navbar  className='este' inverse collapseOnSelect>
   <Navbar.Header>
     <Navbar.Brand>
       <Image src="./Film-icon.png" rounded />
