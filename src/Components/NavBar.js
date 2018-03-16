@@ -14,9 +14,9 @@ class NavBar extends Component {
   <Navbar.Collapse>
     <Nav>
       <NavItem eventKey={1} href="#">
-        Link
+        Home
       </NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
+      <NavDropdown eventKey={3} title="" id="basic-nav-dropdown">
         <MenuItem eventKey={3.1}>Action</MenuItem>
         <MenuItem eventKey={3.2}>Another action</MenuItem>
         <MenuItem eventKey={3.3}>Something else here</MenuItem>
