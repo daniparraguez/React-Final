@@ -54,8 +54,10 @@ class App extends Component {
             onLogout={this.handleLogout}
           />
     </Col>
+  </Row>
+  <Row>
     <Col xs={12}>
-
+      <Search />
     </Col>
     <Col xs={12}>
       <Search />
