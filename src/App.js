@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import search from './Components/Search';
-import footer from './Components/footer';
+import Search from './Components/Search';
+import Footer from './Components/Footer';
 import { Thumbnail, Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
@@ -53,14 +53,14 @@ class App extends Component {
             onAuth={this.handleAuth}
             onLogout={this.handleLogout}
           />
-      <Image src="Film-icon.png" rounded />
     </Col>
     <Col xs={12}>
 
     </Col>
     <Col xs={12}>
-      <Image src="/thumbnail.png" thumbnail />
+      <Search />
       <NewMovies />
+      <Footer />
     </Col>
   </Row>
 </Grid>
