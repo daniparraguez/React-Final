@@ -1,4 +1,6 @@
 import React from 'react';
+import './NewMovies.css';
+import { Image } from 'react-bootstrap';
 
 
 class NewMovies extends React.Component {
@@ -31,18 +33,21 @@ class NewMovies extends React.Component {
 
       })
       .catch(err => {
-        console.log('Fetch Error :-S', err);
+        console.log('Error', err);
       })
   }
 
   render() {
     return(
       <section>
-        <h2>New releases</h2>
-        <div className="newMovies">
+        <h2 className="new">New releases</h2>
+        <div >
           {this.state.movies.map((movie, index) => {
             return (
-              console.log(movie)
+  <div className="newMovies">
+<div className="new">{movie.title}</div>
+<Image src={this.state.movies[index].poster_path === null ? 'http://via.placeholder.com/200x300' : `https://image.tmdb.org/t/p/w300/${this.state.movies[index].poster_path}`} alt={`${this.state.movies.title} poster`} className="imgResponsive" />
+</div>
 
             )
           })}

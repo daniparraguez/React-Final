@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     return (
-<div>
+<div className="back">
 <NavBar />
 <Grid>
   <Row className='first' >
@@ -56,16 +56,23 @@ class App extends Component {
       <Image src="Film-icon.png" rounded />
     </Col>
   </Row>
-  <Row>
+  <Row className='second' >
     <Col xs={12}>
       <Search />
     </Col>
+  </Row>
+  <Row className='third'>
     <Col xs={12}>
-      <Image src="/thumbnail.png" thumbnail />
-      <Footer />
       <NewMovies />
     </Col>
   </Row>
+  <Row>
+    <Col xs={12}>
+    <Footer />
+    </Col>
+  </Row>
+
+
 </Grid>
 </div>
     );
