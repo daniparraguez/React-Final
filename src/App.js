@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import Search from './Components/Search';
-import Footer from './Components/Footer';
 import { Thumbnail, Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
@@ -57,12 +56,10 @@ class App extends Component {
   </Row>
   <Row>
     <Col xs={12}>
-      <Search />
     </Col>
     <Col xs={12}>
       <Search />
       <NewMovies />
-      <Footer />
     </Col>
   </Row>
 </Grid>
