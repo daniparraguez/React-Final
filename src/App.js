@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+import search from './Components/Search';
+import footer from './Components/footer';
 import { Thumbnail, Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
-import NewMovies from './Components/NewMovies'
-import logo from './logo.svg';
+import NewMovies from './Components/NewMovies';
 import './Film-icon.png';
 import './App.css';
 
