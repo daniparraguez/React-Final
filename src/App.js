@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
-import Header from './components/Header';
-import logo from './logo.svg';
+import Header from './Components/Header';
+import search from './Components/Search';
+import footer from './Components/footer';
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
 import './App.css';
 
@@ -43,7 +44,7 @@ class App extends Component {
   <Navbar.Header>
     <Navbar.Brand>
       <a href="#brand">ReMovies</a>
-      <Image src="./Film-icon.png" rounded />
+      <Image src="./Film-icon.png" rounded/>
     </Navbar.Brand>
     <Navbar.Toggle />
   </Navbar.Header>

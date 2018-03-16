@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 function Header ({ appName, user, onAuth, onLogout }) {
   function renderUserData () {
