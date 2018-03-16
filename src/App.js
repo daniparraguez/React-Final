@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
+import search from './Components/Search';
+import footer from './Components/footer';
+import { Thumbnail, Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import Header from './Components/Header';
-import Search from './Components/Search';
-import logo from './logo.svg';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, Image } from 'react-bootstrap';
+import NavBar from './Components/NavBar';
+import NewMovies from './Components/NewMovies';
+import './Film-icon.png';
 import './App.css';
 
 class App extends Component {
@@ -40,46 +43,28 @@ class App extends Component {
 
   render() {
     return (
-<Navbar  className='este' inverse collapseOnSelect>
-  <Navbar.Header>
-    <Navbar.Brand>
-      <Image src="./Film-icon.png" rounded />
-    </Navbar.Brand>
-    <Navbar.Toggle />
-  </Navbar.Header>
-  <Navbar.Collapse>
-    <Nav>
-      <NavItem eventKey={1} href="#">
-        Link
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-        Link
-      </NavItem>
-      <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-        <MenuItem eventKey={3.1}>Action</MenuItem>
-        <MenuItem eventKey={3.2}>Another action</MenuItem>
-        <MenuItem eventKey={3.3}>Something else here</MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey={3.3}>Separated link</MenuItem>
-      </NavDropdown>
-    </Nav>
-    <Nav pullRight>
-      <NavItem eventKey={1} href="#">
-        Link Right
-      </NavItem>
-      <NavItem eventKey={2} href="#">
-        <div>
-          <Header
-            appName='React-Final'
+<div>
+<NavBar />
+<Grid>
+  <Row className='first' >
+    <Col xs={12}>
+              <Header
             user={this.state.user}
             onAuth={this.handleAuth}
             onLogout={this.handleLogout}
           />
-        </div>
-      </NavItem>
-    </Nav>
-  </Navbar.Collapse>
-</Navbar>
+      <Image src="Film-icon.png" rounded />
+    </Col>
+    <Col xs={12}>
+
+    </Col>
+    <Col xs={12}>
+      <Image src="/thumbnail.png" thumbnail />
+      <NewMovies />
+    </Col>
+  </Row>
+</Grid>
+</div>
     );
   }
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header.css';
 
+
 function Header ({ appName, user, onAuth, onLogout }) {
   function renderUserData () {
     return (
