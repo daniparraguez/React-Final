@@ -1,0 +1,15 @@
+.imgResponsive {
+  width: 90%;
+  height: auto;
+}
+.newMovies{
+  padding-top: 1.5em;
+  display: inline-block;
+  text-align: center;
+  color:#e7e7e7;
+}
+.new{
+  color:#e6e6e6;
+  padding-bottom: 1em;
+  
+}

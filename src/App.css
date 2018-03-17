@@ -28,5 +28,18 @@
 }
 
 .first{
-  margin-top: 6em;
+  margin-top: 3.7em;
+
+}
+.back{
+  background-image: url(./IMG_105570.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second{
+  text-align: right;
+}
+.third{
+  text-align: center;
 }

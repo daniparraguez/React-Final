@@ -1,19 +1,19 @@
 import React from 'react';
+import './Header.css';
 
 
 function Header ({ appName, user, onAuth, onLogout }) {
   function renderUserData () {
     return (
-      <ul className='navbar right'>
-        <li>
+      <ul className='right'>
+        <li className='list'>
           <img
-            width='32'
-            className='avatar circle responsive-img'
+            className='circle'
             src={user.photoURL}
           />
         </li>
-        <li>{user.displayName}</li>
-        <li>
+        <li className='list'>{user.displayName}</li>
+        <li className='list'>
           <button
             className='waves-effect waves-light btn blue darken-1'
             onClick={onLogout}
@@ -28,7 +28,7 @@ function Header ({ appName, user, onAuth, onLogout }) {
   function renderLoginButton () {
     return (
       <ul className='right'>
-        <li>
+        <li className='list'>
           <button
             className='waves-effect waves-light btn blue darken-1'
             onClick={onAuth}
@@ -41,8 +41,8 @@ function Header ({ appName, user, onAuth, onLogout }) {
   }
 
   return (
-    <nav className='blue darken-4'>
-      <div className='nav-wrapper container'>
+    <nav>
+      <div>
         <a href='#' className='left brand-logo'>{appName}</a>
         {user ? renderUserData() : renderLoginButton()}
       </div>
@@ -50,4 +50,4 @@ function Header ({ appName, user, onAuth, onLogout }) {
   )
 }
 
-export default Header
+export default Header;

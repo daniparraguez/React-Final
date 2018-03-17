@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import firebase from 'firebase';
 import Search from './Components/Search';
-import Footer from './Components/Footer';
 import { Thumbnail, Navbar, Nav, NavItem, NavDropdown, MenuItem, Image, Grid , Col , Row } from 'react-bootstrap';
 import Header from './Components/Header';
 import NavBar from './Components/NavBar';
 import NewMovies from './Components/NewMovies';
+import Footer from './Components/Footer.js';
 import './Film-icon.png';
 import './App.css';
 
@@ -43,7 +43,7 @@ class App extends Component {
 
   render() {
     return (
-<div>
+<div className="back">
 <NavBar />
 <Grid>
   <Row className='first' >
@@ -53,17 +53,21 @@ class App extends Component {
             onAuth={this.handleAuth}
             onLogout={this.handleLogout}
           />
-      <Image src="Film-icon.png" rounded />
+    </Col>
+  </Row>
+  <Row className='second' >
+    <Col xs={12}>
+      <Search />
+    </Col>
+  </Row>
+  <Row className='third'>
+    <Col xs={12}>
+      <NewMovies />
     </Col>
   </Row>
   <Row>
     <Col xs={12}>
-      <Search />
-    </Col>
-    <Col xs={12}>
-      <Image src="/thumbnail.png" thumbnail />
-      <Footer />
-      <NewMovies />
+    <Footer />
     </Col>
   </Row>
 </Grid>
