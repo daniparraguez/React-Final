@@ -1,0 +1,21 @@
+.Footer {
+background-color: #48cfad;
+text-align: center;
+padding: 50px;
+color: #000;
+}
+
+li {
+ list-style: none;
+   color: #000;
+}
+.changeone {
+ display: inline-block;
+}
+
+ .changeone li a {
+ color: #000;
+ font-size: 16px;
+ font-weight: bold;
+
+}
